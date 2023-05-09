@@ -1,0 +1,18 @@
+[package]
+name = "state-machine"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.68"
+criterion = { version = "0.4.0", features = ["html_reports"]}
+
+[[bench]]
+name = "state_machine_benchmark"
+harness = false
+
+[lib]
+bench = false
+
