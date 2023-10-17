@@ -1,7 +1,7 @@
 use criterion::{criterion_group, criterion_main, Criterion};
 
 fn bench_fibs(c: &mut Criterion) {
-    let mut group = c.benchmark_group("State Machine Comparison");
+    let mut group = c.benchmark_group("Comparison");
     group.bench_function("enum", |b| {
         b.iter(state_machine::internal_enum::run_full_state_machine)
     });
